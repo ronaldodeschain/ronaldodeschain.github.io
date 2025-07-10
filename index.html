@@ -11,18 +11,18 @@
     </style>
 </head>
 <body>
-    <header>  
+    <header id="section-1">  
         <img src="https://avatars.githubusercontent.com/u/67172445?v=4" alt="Ronaldo Deschain Avatar" class="avatar" />
         <h1>Ronaldo Lemos</h1>
         <p>Desenvolvedor | Entusiasta de Tecnologia | Eterno Aprendiz</p>
         <nav>
-            <a href="#">Sobre mim</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="#section-2">Sobre mim</a>
+            <a href="#section-3">Projetos</a>
+            <a href="#section-4">Contato</a>
         </nav>
     </header>
     <main>
-        <section id="about">
+        <section id="section-2">
             <h2>Sobre mim</h2>
             <p>
                 Ola! Eu sou o Ronaldo Lemos da Silva, um desenvolvedor apaixonado por tecnologia, codar, e criar
@@ -31,33 +31,58 @@
                 expande meu conhecimento e ajuda a quebrar paradigmas.                
             </p>
         </section>
-        <section id="projects" class="projects">
-            <h2>Projetos</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/ronaldodeschain/ronaldodeschain.github.io" target="_blank">This Portfolio</a> &mdash; O código para este portfólio.
-                </li>
-                <li>
-                    <a href="https://github.com/ronaldodeschain/oauth_2_estudo" target="_blank">OAuth_2</a> &mdash; Estudo para criação de OAuth2.0.
-                </li>
-                <li>
-                    <a href="https://github.com/ronaldodeschain/crudnos3" target="_blank">Crud na AWS S3</a> &mdash; Estudo para criação de Crud na Aws usando S3.
-                </li>
-                <li>
-                    <a href="https://github.com/ronaldodeschain/python_alura" target="_blank">Repositório de Python na Alura</a> &mdash; Repositório onde armazeno referencia dos cursos que fiz de Python.
-                </li>
-                <li>
-                    <a href="https://github.com/ronaldodeschain/7dayshtml" target="_blank">7 Days of Code HTML</a> &mdash; Desafio de criação de site em 7 dias da Alura.
-                </li>
-                <li>
-                    <a href="https://github.com/ronaldodeschain/imersao_devops_alura" target="_blank">Imersão DevOps Alura</a> &mdash; Imersão de DevOps da Alura que participei.
-                </li>
-                
-                
-                
-            </ul>
+        <section id="section-3" class="projects">
+            <button type="button" class="collapsible" ><h2>Projetos</h2></button>
+            
+                <ul class="projects__list">
+                    <li>
+                        <button type="button" class="collapsible">Este Porftolio</button>
+                        <div class="content">
+                            <a href="https://github.com/ronaldodeschain/ronaldodeschain.github.io" target="_blank">This Portfolio</a> &mdash; O código para este portfólio.
+                        </div>
+                    
+                    </li>
+                    <li>
+                        <button type="button" class="collapsible">OAuth2.0</button>
+                        <div class="content">
+                            <a href="https://github.com/ronaldodeschain/oauth_2_estudo" target="_blank">OAuth_2</a> &mdash; Estudo para criação de OAuth2.0.    
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <button type="button" class="collapsible">Estudo de Crud na Aws</button>
+                        <div class="content">
+                            <a href="https://github.com/ronaldodeschain/crudnos3" target="_blank">Crud na AWS S3</a> &mdash; Estudo para criação de Crud na Aws usando S3.
+                        </div>
+                    
+                    </li>
+                    <li>
+                        <button type="button" class="collapsible">Repositório de Python</button>
+                        <div class="content">
+                            <a href="https://github.com/ronaldodeschain/python_alura" target="_blank">Repositório de Python na Alura</a> &mdash; Repositório onde armazeno referencia dos cursos que fiz de Python.
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <button type="button" class="collapsible">7 Days of Code</button>
+                        <div class="content">
+                            <a href="https://github.com/ronaldodeschain/7dayshtml" target="_blank">7 Days of Code HTML</a> &mdash; Desafio de criação de site em 7 dias da Alura.
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <button type="button" class="collapsible">Imersão DevOps</button>
+                        <div class="content">
+                            <a href="https://github.com/ronaldodeschain/imersao_devops_alura" target="_blank">Imersão DevOps Alura</a> &mdash; Imersão de DevOps da Alura que participei.
+                        </div>    
+                    </li>   
+                </ul>
+            
         </section>
-        <section id="contact">
+        <section>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </section>
+        <section id="section-4">
             <h2>Contato</h2>
             <p>
                 Você pode me achar em:
@@ -66,6 +91,8 @@
                 
             </p>
         </section>
+        <section><a href="#section-1">voltar ao topo</a></section>
     </main>
+    <script src="scripts/collapsible.js"></script>   
 </body>
 </html>
