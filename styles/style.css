@@ -48,11 +48,6 @@ body {
         .projects{
             text-align: center;
         }
-        /* .projects__list{
-            
-            justify-content: space-between;
-            padding: 0 20px;
-        } */
         .projects ul {
             list-style: none;
             padding-left: 0;
@@ -70,15 +65,17 @@ body {
         .projects a:hover {
             color: #0366d6;
         }
-
+        
         .collapsible{
             cursor: pointer;
             padding: 18px;
             text-align: left;
             outline: none;
+            border-radius: 15px;
         }
         .active,.collapsible:hover{
-            background-color: #555;
+            background-color: #24292f;
+            color: #fff;
         }
         .content{
             padding: 0 18px;
